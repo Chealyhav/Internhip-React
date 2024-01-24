@@ -10,8 +10,6 @@ export const data1=[
     description:"We connect. We make lives better. We connect. We make lives better."
    },
 
-
-
    {
     icon:"/image/target.png",
     title:"Our Mission",
@@ -27,45 +25,5 @@ export const data1=[
     title:"Our Core Values",
     description:"We are dive by a commitment to innovation, integrity, and empowerment."
    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. jfffffff ffffffffff"
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. fffff ffffffffff"
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. fffff ffffffffff"
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. ffffffffffffff ffffffffffffffff "
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. fffff ffffffffff"
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. ffffffffffffff ffffffffffffffff "
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. ffffffffffffff ffffffffffffffff "
-//    },
-//    {
-//     icon:"/image/heart.png",
-//     title:"ddd",
-//     description:"We connect. We make lives better. "
-//    }
 ]
 
