@@ -12,7 +12,7 @@ export const DirectionList: React.FC<DirectionListProps> = (props) => {
   return (
     <div>
       <div className="flex flex-wrap items-center justify-center  ">
-        <div className="h-full w-full p-5">
+        <div className="h-full w-full p-4">
           <div className="px-10 py-8 flex justify-center items-center">
             <Image
               src={icon}

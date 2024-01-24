@@ -1,3 +1,5 @@
+
+// data direction card //
 export const data1=[
     {
     icon:"/image/target.png",

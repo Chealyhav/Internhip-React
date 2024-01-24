@@ -1,6 +1,6 @@
 
 
-import { CardAwards } from '@/component/aword';
+import { CardAwards } from '@/component/awards';
 import { DirectionCard } from '@/component/direction-card';
 import { CardGovernance } from '@/component/governance';
 import ResizableCardList from '@/component/resizable-card';

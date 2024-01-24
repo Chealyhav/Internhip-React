@@ -9,20 +9,21 @@ export const Governnacelist: React.FC<GovernnacelistProps> = (props) => {
   const { image, title } = props;
 
   return (
-    <div className="relative flex flex-col mt-6 text-gray-700 border border-green-400 rounded-xl shadow-lg bg-clip-border aspect-w-6 aspect-h-2 px-2 ">
-      <div className=" relative -mt-6 border rounded-lg shadow-lg aspect-w-3 aspect-h-2 ">
-        <Image
-          src={image}
-          alt="card-image"
-          fill
-          className="border rounded-lg "
-        />
-      </div>
-      <div className="flex justify-center items-center mt-20 break-words ">
-        <p className=" text-center mt-5 md:py-4 px-3 text-md md:text-lg font-bold text-green-600">
+    <>
+      <div className="border w-full h-full px-2 mt-6 relative border-green-300 rounded-xl shadow-lg ">
+        <div className="relative border rounded-lg shadow-lg aspect-w-4 aspect-h-3 min-w-56 -mt-6 ">
+          <Image
+            src={image}
+            alt="card-image"
+            fill
+            className="border rounded-lg"
+          />
+        </div>
+
+        <h2 className=" break-words p-4 text-center font-semibold text-green-600 text-lg md:text-xl">
           {title}
-        </p>
+        </h2>
       </div>
-    </div>
+    </>
   );
 };

@@ -1,4 +1,24 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Data resizable //
 export const data =[
 
     { 
@@ -40,6 +60,12 @@ export const data =[
         description:`
         <ul>
             <li>
+               I dear to challenge  myself and others to thingsbetter and differently.
+            </li>
+            <li>
+               I learn from my mistakes and move forward.
+            </li>
+                  <li>
                I dear to challenge  myself and others to thingsbetter and differently.
             </li>
             <li>
