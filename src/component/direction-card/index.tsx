@@ -10,13 +10,13 @@ interface DirectionCardProps {
 
 export const DirectionCard: React.FC<DirectionCardProps> = ({ items }) => {
   return (
-    <div className="container mx-auto py-2 px-8">
+    <div className="py-2 px-6">
       <div className="flex flex-wrap items-center justify-center">
         {items.map((item, index) => (
           <div
             key={index}
             className={cm(
-              "before:w-[2px] before:h-1/4 before:absolute before:bg-gray-400  flex justify-start items-center",
+              "before:w-[2px] before:h-1/4 before:absolute before:bg-gray-400 flex justify-start items-center ",
               {
                 "xl:before:bg-transparent": index % 3 === 0,
                 "max-xl:before:bg-transparent": index % 2 === 0,

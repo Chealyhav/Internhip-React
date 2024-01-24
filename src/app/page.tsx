@@ -11,7 +11,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="my-16">
+    <div className="my-16 container">
       <ResizableCardList
         title="Our Core Value"
         subtitle="We are driven by"

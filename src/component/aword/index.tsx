@@ -9,9 +9,9 @@ interface CardAwardsProps {
 
 export const CardAwards: React.FC<CardAwardsProps> = ({ items }) => {
   return (
-    <div className="my-2">
+    <div className="">
       {items.map((value, index) => (
-        <div key={index} className="container mx-auto ">
+        <div key={index} className=" py-3 flex justify-center">
           <Awardslist {...value} />
         </div>
       ))}

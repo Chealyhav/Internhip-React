@@ -29,7 +29,7 @@ const ResizableCardList: React.FC<ResizableCardProps> = (props) => {
 
 const CardItemList: React.FC<{ items: Item[] }> = ({ items }) => {
   return (
-    <div className="container mx-auto">
+    <div className="">
         <div className="grid gap-5 grid-cols-12">
           {items.map((x, i) => (
             <div
