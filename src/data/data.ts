@@ -29,3 +29,45 @@ export const data1=[
    },
 ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const data3 = [
+  {
+    image: "/image/Banner-1.jpg",
+    title: "Sustainability Report 2021",
+    description: `We connect. We make lives better. We connect. We make lives better.
+                    We connect. We make lives better.We connect. We make lives better.
+                     We connect. We make lives better.We connect. We make lives better.
+                     We connect. We make lives better.We connect. We make lives better.
+                     We connect. We make lives better.We connect. We make lives better
+                     We connect. We make lives better.We connect. We make lives better.
+                     We connect. We make lives better.We connect. We make lives better
+                      We connect. We make lives better.`,
+    labelbutton: "Learn More",
+    link: "We connect. We make lives better.",
+  },
+  {
+    image: "/image/Smart.png",
+    title: "Sustainability Report 2021",
+    description: `We connect. We make lives better. We connect. We make lives better.We connect. 
+    We connect. We make lives better. We connect. We make lives better.We connect. 
+    We connect. We make lives better. We connect. We make lives better.We connect. 
+    We make lives better. We connect. We make lives better.`,
+    labelbutton: "Learn More",
+    link: "We connect. We make lives better.",
+  },
+];
+
+
+
