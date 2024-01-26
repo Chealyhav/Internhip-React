@@ -30,18 +30,7 @@ export const data1=[
 ]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//Data for Sustainability Report// 
 export const data3 = [
   {
     image: "/image/Banner-1.jpg",
@@ -55,17 +44,17 @@ export const data3 = [
                      We connect. We make lives better.We connect. We make lives better
                       We connect. We make lives better.`,
     labelbutton: "Learn More",
-    link: "We connect. We make lives better.",
+    link: "#",
   },
   {
     image: "/image/Smart.png",
     title: "Sustainability Report 2021",
     description: `We connect. We make lives better. We connect. We make lives better.We connect. 
-    We connect. We make lives better. We connect. We make lives better.We connect. 
-    We connect. We make lives better. We connect. We make lives better.We connect. 
-    We make lives better. We connect. We make lives better.`,
+                  We connect. We make lives better. We connect. We make lives better.We connect. 
+                  We connect. We make lives better. We connect. We make lives better.We connect. 
+                  We make lives better. We connect. We make lives better.`,
     labelbutton: "Learn More",
-    link: "We connect. We make lives better.",
+    link: "#",
   },
 ];
 

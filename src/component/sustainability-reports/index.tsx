@@ -18,16 +18,18 @@ export const SustainabilityList: React.FC<SustainabilityListProps> = ({
   );
 };
 
-export const SustainabilityList1: React.FC<SustainabilityListProps> = ({
+export const SustainabilityListRec: React.FC<SustainabilityListProps> = ({
   items,
 }) => {
   return (
-    <div className="">
+    <>
       {items.map((x, i) => (
-        <div key={i} className="">
+        <div key={i}>
           <SustainabilityCard {...x} type="rectangle" />
         </div>
       ))}
-    </div>
+    </>
   );
 };
+
+

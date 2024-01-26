@@ -48,12 +48,12 @@ export const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
           <p className="line-clamp-3 break-words">{description}</p>
         </div>
 
-        <div className="py-2 flex justify-start items-end">
+        <div className="flex justify-start items-end">
           <Link
             href={link}
             className="md:py-4 md:px-10 px-6 py-2 bg-green-600 text-white border rounded-md"
           >
-            Learn More
+            {labelbutton}
           </Link>
         </div>
       </div>
