@@ -1,11 +1,9 @@
 import cm from "classnames";
-import { DirectionList, DirectionListProps } from "./card-list";
+import { CardDirection, CardDirectionProps } from "./card-direction";
 
-interface DirectionCardProps {
-  items: DirectionListProps[];
-}
-
-export const DirectionCard: React.FC<DirectionCardProps> = ({ items }) => {
+export const Direction: React.FC<{ items: CardDirectionProps[] }> = ({
+  items,
+}) => {
   return (
     <div className="py-2 px-6">
       <div className="flex flex-wrap items-center justify-center">
@@ -21,7 +19,7 @@ export const DirectionCard: React.FC<DirectionCardProps> = ({ items }) => {
               }
             )}
           >
-            <DirectionList {...item} />
+            <CardDirection {...item} />
           </div>
         ))}
       </div>

@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export interface GovernnacelistProps {
+export interface CardGovernanceProps {
   image: string;
   title: string;
 }
 
-export const Governnacelist: React.FC<GovernnacelistProps> = (props) => {
+export const CardGovernance: React.FC<CardGovernanceProps> = (props) => {
   const { image, title } = props;
 
   return (
@@ -20,7 +20,7 @@ export const Governnacelist: React.FC<GovernnacelistProps> = (props) => {
           />
         </div>
 
-        <h2 className=" break-words p-4 text-center font-semibold text-green-600 text-lg md:text-xl">
+        <h2 className=" break-words p-4 text-center font-semibold text-green-600 text-lg md:text-xl font-ubuntu">
           {title}
         </h2>
       </div>

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-export interface DirectionListProps {
+export interface CardDirectionProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export const DirectionList: React.FC<DirectionListProps> = (props) => {
+export const CardDirection: React.FC<CardDirectionProps> = (props) => {
   const { icon, title, description } = props;
   return (
     <div>
@@ -23,11 +23,11 @@ export const DirectionList: React.FC<DirectionListProps> = (props) => {
             />
           </div>
           <div className="px-1">
-            <h1 className="text-center text-xl md:text-2xl text-green-600 font-bold ">
+            <h1 className="text-center text-xl md:text-2xl text-green-600 font-bold font-ubuntu ">
               {title}
             </h1>
             <div className="px-5 w-80">
-              <p className="pt-2 text-md md:text-xl text-center text-gray-800">
+              <p className="pt-2 text-md md:text-xl text-center text-gray-800 font-ubuntu">
                 {description}
               </p>
             </div>

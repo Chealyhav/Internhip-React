@@ -1,4 +1,5 @@
 
+
 // data direction card //
 export const data1=[
     {
@@ -31,7 +32,7 @@ export const data1=[
 
 
 //Data for Sustainability Report// 
-export const data3 = [
+export const dataSustainability = [
   {
     image: "/image/Banner-1.jpg",
     title: "Sustainability Report 2021",
@@ -60,3 +61,49 @@ export const data3 = [
 
 
 
+//BusinessData//
+export const cardBusinessData = [
+  {
+    image: "/image/Samsung-Galaxy-Flip-41.jpg",
+    title: "Essentials",
+    price: "$50",
+    duration: "yearly: 1 year",
+    labelButton: "Contact Us for Demo",
+    linkButton: "#",
+    recommend: {
+      enable: false,
+      titlerecommed: "Recommended",
+    },
+    listfeature: "List on Features:",
+    features: ["Internet data", "Postpaid balance", "On-net-minutes"],
+  },
+  {
+    image: "/image/Samsung-Galaxy-Flip-41.jpg",
+    title: "Essentials",
+    price: "$60",
+    duration: "yearly: 1 year",
+    labelButton: "Contact Us for Demo",
+    linkButton: "#",
+    recommend: {
+      enable: true,
+      titlerecommed: "Recommended",
+    },
+    listfeature: "List on Features:",
+    features: ["Internet data", "Postpaid balance", "On-net-minutes","On-net-minutes","CUG minutes","Special SMS card"],
+  },
+  {
+    image: "/image/Samsung-Galaxy-Flip-41.jpg",
+    title: "Business",
+    price: "$10",
+    duration: "yearly: 1 year",
+    labelButton: "Contact Us for Demo",
+    linkButton: "#",
+    recommend: {
+      enable: false,
+      titlerecommed: "Recommended",
+    },
+    listfeature: "List on Features:",
+    features: ["Internet data", "Postpaid balance", "On-net-minutes"],
+  },
+
+];
