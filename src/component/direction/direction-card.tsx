@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-export interface CardDirectionProps {
+export interface DirectionCardProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export const CardDirection: React.FC<CardDirectionProps> = (props) => {
+export const DirectionCard: React.FC<DirectionCardProps> = (props) => {
   const { icon, title, description } = props;
   return (
     <div>

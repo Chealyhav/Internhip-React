@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export interface CardProps {
+export interface ResizableCardProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export const CardItem: React.FC<CardProps> = (props) => {
+export const ResizableCard: React.FC<ResizableCardProps> = (props) => {
   const { title, icon, description } = props;
   return (
     <div className="w-full bg-gray-200 h-full border border-gray-300 rounded-xl p-9 ">

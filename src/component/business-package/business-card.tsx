@@ -4,7 +4,7 @@ import Link from "next/link";
 import cn from "classnames";
 import { CheckCircleIcon } from "@heroicons/react/16/solid";
 
-export interface CardBusinessProps {
+export interface BusinessCardProps {
   image: string;
   title: string;
   price: string;
@@ -19,7 +19,7 @@ export interface CardBusinessProps {
   features: string[];
 }
 
-export const CardBusiness: React.FC<CardBusinessProps> = ({
+export const BusinessCard: React.FC<BusinessCardProps> = ({
   image,
   title,
   price,

@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export interface CardGovernanceProps {
+export interface GovernanceCardProps {
   image: string;
   title: string;
 }
 
-export const CardGovernance: React.FC<CardGovernanceProps> = (props) => {
+export const GovernanceCard: React.FC<GovernanceCardProps> = (props) => {
   const { image, title } = props;
 
   return (

@@ -3,7 +3,7 @@ import React from "react";
 import cn from "classnames";
 import Link from "next/link";
 
-export interface CardSustainabilityProps {
+export interface SustainabilityCardProps {
   image: string;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ export interface CardSustainabilityProps {
   type?: "square" | "rectangle";
 }
 
-export const CardSustainability: React.FC<CardSustainabilityProps> = ({
+export const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
   image,
   title,
   description,

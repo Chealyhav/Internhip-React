@@ -1,7 +1,8 @@
 import cm from "classnames";
-import { CardDirection, CardDirectionProps } from "./card-direction";
+import { DirectionCard, DirectionCardProps } from "./direction-card";
 
-export const Direction: React.FC<{ items: CardDirectionProps[] }> = ({
+
+export const Direction: React.FC<{ items: DirectionCardProps[] }> = ({
   items,
 }) => {
   return (
@@ -19,7 +20,7 @@ export const Direction: React.FC<{ items: CardDirectionProps[] }> = ({
               }
             )}
           >
-            <CardDirection {...item} />
+            <DirectionCard {...item} />
           </div>
         ))}
       </div>

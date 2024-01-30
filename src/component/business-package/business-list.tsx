@@ -1,13 +1,14 @@
-import { CardBusiness, CardBusinessProps } from "./card-business";
+import { BusinessCard, BusinessCardProps } from "./business-card";
 
-interface CardBusinesslistProps {
-  items: CardBusinessProps[];
+
+interface BusinessListProps {
+  items: BusinessCardProps[];
   title: string;
   subtitle: string;
   description: string;
 }
 
-export const CardBusinessList: React.FC<CardBusinesslistProps> = (props) => {
+export const BusinessList: React.FC<BusinessListProps> = (props) => {
   const { items, title, subtitle, description } = props;
   return (
     <>
@@ -25,7 +26,7 @@ export const CardBusinessList: React.FC<CardBusinesslistProps> = (props) => {
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full h-full">
         {items.map((item, index) => (
           <div key={index}>
-            <CardBusiness {...item} />
+            <BusinessCard {...item} />
           </div>
         ))}
       </div>

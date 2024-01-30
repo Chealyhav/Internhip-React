@@ -1,10 +1,12 @@
-import { CardBusinessList } from "@/component/business-package";
+
+
+import { BusinessList } from "@/component/business-package/business-list";
 import { cardBusinessData } from "@/data/data";
 
 export default function PageTest() {
   return (
     <div className="container my-5">
-      <CardBusinessList
+      <BusinessList
         items={cardBusinessData}
         title="Business Solution Packages"
         subtitle="Choose the Right Plan for Your Business"
