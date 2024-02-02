@@ -3,12 +3,8 @@ import {
   SustainabilityCard,
   SustainabilityCardProps,
 } from "./sustainability-card";
+import { SustainabilityListProps } from "./interface";
 
-export interface SustainabilityListProps {
-  items: SustainabilityCardProps[];
-  title: string;
-  subtitle: string;
-}
 
 export const RectangleSustainabilityList: React.FC<SustainabilityListProps> = ({
   items,

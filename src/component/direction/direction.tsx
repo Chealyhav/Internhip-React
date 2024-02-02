@@ -8,19 +8,19 @@ export const Direction: React.FC<{ items: DirectionCardProps[] }> = ({
   return (
     <div className="py-2 px-6">
       <div className="flex flex-wrap items-center justify-center">
-        {items.map((item, index) => (
+        {items.map((x, i) => (
           <div
-            key={index}
+            key={i}
             className={cm(
               "before:w-[2px] before:h-1/4 before:absolute  before:bg-gray-400 flex justify-start items-center",
               {
-                "xl:before:bg-transparent": index % 3 === 0,
-                "max-xl:before:bg-transparent ": index % 2 === 0,
-                "max-[1015px]:before:bg-transparent": index % 1 === 0,
+                "xl:before:bg-transparent": i % 3 === 0,
+                "max-xl:before:bg-transparent ": i % 2 === 0,
+                "max-[1015px]:before:bg-transparent": i % 1 === 0,
               }
             )}
           >
-            <DirectionCard {...item} />
+            <DirectionCard {...x} />
           </div>
         ))}
       </div>

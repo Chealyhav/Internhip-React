@@ -1,16 +1,11 @@
+import { SustainabilityListProps } from "./interface";
 import {
   SustainabilityCard,
-  SustainabilityCardProps,
 } from "./sustainability-card";
 
-export interface SquareSustainabilityListProps {
-  items: SustainabilityCardProps[];
-  title: string;
-  subtitle: string;
-}
 
 export const SquareSustainabilityList: React.FC<
-  SquareSustainabilityListProps
+  SustainabilityListProps
 > = ({ items, title, subtitle }) => {
   return (
     <>

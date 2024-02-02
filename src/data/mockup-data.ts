@@ -88,3 +88,42 @@ export const data =[
         size:50,
     }
 ]
+
+
+// Data subscribeddata//
+export const subscribeddata =[{
+
+    icon:"/image/telephone-call.png",
+    url:"011836303",
+    textlink:"011836303",
+    title:"Call an agent",
+    types:true,
+    content:"Smart Shop",
+  },
+  {
+    content:"Smart Shop",
+    icon:"/image/shop.png",
+    url:"https://www.youtube.com/watch?v=E0wfyxfPHCg",
+    textlink:"find location",
+    title:"Visit any",
+    types:false
+  },
+  
+  {
+    content:"SmartNas App",
+    icon:"/image/Logo.png",
+    url:"ddd",
+    textlink:"Click to download",
+    title:"Go to The",
+    types:false,
+  
+  },
+  {
+    content:"Booking Now",
+    icon:"/image/email.png",
+    url:"ddd",
+    textlink:"Click to Book",
+    title:"Contact Us",
+    types:false
+  },
+  ]

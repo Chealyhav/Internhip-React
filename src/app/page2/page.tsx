@@ -1,16 +1,13 @@
-
-
-import { BusinessList } from "@/component/business-package/business-list";
-import { cardBusinessData } from "@/data/data";
+import { SubscribeList } from "@/component/subscribe/subscribe-list";
+import { subscribeddata } from "@/data/mockup-data";
 
 export default function PageTest() {
   return (
-    <div className="container my-5">
-      <BusinessList
-        items={cardBusinessData}
-        title="Business Solution Packages"
-        subtitle="Choose the Right Plan for Your Business"
-        description="Get more data to browse the internet, stream videos, update Facebook and a whole lot more with Smart's SurfLikeCrazy! Get as much or as little as your like, from only 10 cents/100MB of data!"
+    <div className="container my-10">
+      <SubscribeList
+        items={subscribeddata}
+        title="Subscribe Now"
+        subtitle="Join Now for a Connected Tomorrow!"
       />
     </div>
   );

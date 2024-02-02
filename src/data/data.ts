@@ -1,6 +1,6 @@
 
 
-// data direction card //
+//Data direction card //
 export const data1=[
     {
     icon:"/image/target.png",
@@ -28,6 +28,7 @@ export const data1=[
     title:"Our Core Values",
     description:"We are dive by a commitment to innovation, integrity, and empowerment."
    },
+   
 ]
 
 

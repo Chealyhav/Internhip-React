@@ -24,9 +24,9 @@ export const BusinessList: React.FC<BusinessListProps> = (props) => {
         </p>
       </div>
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full h-full">
-        {items.map((item, index) => (
-          <div key={index}>
-            <BusinessCard {...item} />
+        {items.map((x, i) => (
+          <div key={i}>
+            <BusinessCard {...x} />
           </div>
         ))}
       </div>
