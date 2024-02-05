@@ -108,3 +108,14 @@ export const cardBusinessData = [
   },
 
 ];
+
+//FollowData//
+export const follow=[{
+  title:"Follow Us",
+  description:"Stay Connected: Join Us Across Platform for Exclusive Update and Engaging Content.",
+  media: [
+    { icon: '/image/facebook.png', url: 'https://www.facebook.com/' },
+    { icon: '/image/linkedin.png', url: 'https://twitter.com/' },
+    { icon: '/image/telegram.png', url: 'https://www.instagram.com/' },
+  ],
+}]
