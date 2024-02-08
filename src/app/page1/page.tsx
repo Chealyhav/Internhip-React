@@ -1,19 +1,20 @@
 import { Awards } from "@/component/awards/awards";
 import { BusinessList } from "@/component/business-package/business-list";
 import { Direction } from "@/component/direction/direction";
+import { Follow } from "@/component/follow/follow";
 import { Governance } from "@/component/governance/governance";
 import { ResizableList } from "@/component/resizable/resizable-list";
 import { SubscribeList } from "@/component/subscribe/subscribe-list";
 import { RectangleSustainabilityList } from "@/component/sustainability-reports/rectangle-sustainability-list";
 import { SquareSustainabilityList } from "@/component/sustainability-reports/square-sustainability-list";
-import { cardBusinessData, data1, dataSustainability } from "@/data/data";
+import { cardBusinessData, data1, dataSustainability, follow } from "@/data/data";
 import { data2, data3 } from "@/data/data2";
 import { data, subscribeddata } from "@/data/mockup-data";
 import React from "react";
 
 export default function Home() {
   return (
-    <div className="my-16 container">
+    <div className="container my-16">
       <ResizableList
         title="Our Core Value"
         subtitle="We are driven by"
@@ -52,6 +53,8 @@ export default function Home() {
         title="Subscribe Now"
         subtitle="Join Now for a Connected Tomorrow!"
       />
+
+      <Follow items={follow} />
     </div>
   );
 }

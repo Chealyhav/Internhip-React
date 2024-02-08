@@ -119,3 +119,34 @@ export const follow=[{
     { icon: '/image/telegram.png', url: 'https://www.instagram.com/' },
   ],
 }]
+
+
+//PillarsData//
+export const Pillarsdata=[{
+  title:"Education",
+  image: "/image/education.jpg",
+  description:"Creating long-term value through our investments as well as ensuring inclusivity in our products and services."
+},
+{
+  title:"Community Sport",
+  image: "/image/community-sport.jpg",
+  description:'Developing world-class talent built on core Axiata values of Uncompromising Integrity. Exceptional Performance (UI.EP).'
+},
+{
+  title:"Tech Evolution",
+  image: "/image/tech-evolution.jpg",
+  description:"Designing process improvements to ensure greater effectiveness and efficiency in our customer care and our internal operations."
+},
+{
+  title:"Environment",
+  image: "/image/environment.jpg",
+  description:"Having initiatives aimed at mitigating our environmental impact, and our Corporate Social Responsibility (CSR) contributions to Cambodian society."
+},
+{
+  title:"Community Sport",
+  image: "/image/community-sport.jpg",
+  description:'Developing world-class talent built on core Axiata values of Uncompromising Integrity. Exceptional Performance (UI.EP).'
+},
+]
+
+

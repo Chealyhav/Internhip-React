@@ -15,10 +15,10 @@ export const FollowCard: React.FC<FollowCardProps> = (props) => {
   const { title, description, media } = props;
 
   return (
-    <div className="relative grid grid-cols-1 bg-green-600 p-8 clip-cut-sm md:grid-cols-2  md:p-12 md:clip-cut-md ">
+    <div className="relative grid grid-cols-1 bg-green-600 p-8 clip-cut-sm md:grid-cols-2  md:p-12 md:clip-cut-md  ">
       <div className=" absolute -top-4  hidden  w-full md:-top-6">
         <div className=" flex justify-end  ">
-          <div className="h-8 w-8 bg-red-300 clip-cut-tri-sm md:h-12 md:w-12 md:clip-cut-tri  "></div>
+          <div className="h-8 w-8 bg-red-300 clip-cut-tri-sm md:h-12 md:w-12 md:clip-cut-tri"></div>
         </div>
       </div>
       <div className="py-2 ">

@@ -20,7 +20,7 @@ export const GovernanceCard: React.FC<GovernanceCardProps> = (props) => {
           />
         </div>
 
-        <h2 className=" break-words p-4 text-center font-semibold text-green-600 text-lg md:text-xl font-ubuntu">
+        <h2 className="break-words p-4 text-center font-semibold text-green-600 text-lg md:text-xl font-ubuntu">
           {title}
         </h2>
       </div>

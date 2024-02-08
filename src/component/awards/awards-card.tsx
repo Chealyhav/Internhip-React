@@ -6,20 +6,15 @@ export interface AwardsCardProps {
 }
 
 export const AwardsCard: React.FC<AwardsCardProps> = ({ image, title }) => (
-  <div className="grid grid-cols-1 place-items-center  border-b-2 border-gray-400 py-3  md:grid-cols-2  ">
-    <div className="m-auto">
-      <h2 className="text-center text-lg font-semibold md:text-left md:text-xl font-ubuntu ">
+  <div className=" grid grid-cols-1 border-b-2 border-gray-400 py-8 md:grid-cols-2 place-items-center gap-y-4">
+    <div className="">
+      <h2 className="text-center font-ubuntu text-lg font-semibold md:text-left md:text-xl">
         {title}
       </h2>
     </div>
-    <div className="w-full h-full">
-      <div className="relative aspect-w-5 aspect-h-3">
-        <Image
-          src={image}
-          alt="Picture"
-          fill
-          className="object-fit pt-2"
-        />
+    <div className="h-full w-full max-w-sm ">
+      <div className="aspect-h-4 aspect-w-5 relative  ">
+        <Image src={image} alt="awards picture " fill className="object-contain" />
       </div>
     </div>
   </div>

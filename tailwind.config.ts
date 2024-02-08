@@ -36,11 +36,21 @@ module.exports = {
             'clip-path': 'polygon(95% 0, 100% 50%, 100% 100%, 0 99%, 0 0)',
           },
           '.clip-cut-md': {
-            'clip-path': 'polygon(calc(100% - 51px)0,100%  calc(100% - 176px), 100% 100%, 0 99%, 0 0)',
+            'clip-path': 'polygon(calc(100% - 50px)0,100%  calc(100% - 176px), 100% 100%, 0 100%, 0 0)',
           },
           '.clip-cut-sm': {
-            'clip-path': 'polygon(calc(100% - 30px)0,100%  6%, 100% 100%, 0 99%, 0 0)',
+            'clip-path': 'polygon(calc(100% - 30px)0,100%  6%, 100% 100%, 0 100%, 0 0)',
           },
+
+          
+          // '.clip-cut': {
+          //   'clip-path': 'polygon(0 0, 80% 0, 100% 10%, 100% 100%, 0% 100%, 0 0)',
+          // },
+          '.clip-cut': {
+            'clip-path': 'polygon(calc(100% - 20px)0,100%  7%, 100% 100%, 0 100%, 0 0)',
+          },
+
+
           '.clip-cut-tri':{
             'clip-path': 'polygon(0 calc(100% - 22px), 100% 1%, 100% 100%)',
           },
