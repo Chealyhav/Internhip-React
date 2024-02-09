@@ -1,9 +1,8 @@
-
 import { PillarsList } from "@/component/pillars/pillars-list";
 
 export default function PageTest() {
   return (
-    <div className="container my-10 ">
+    <div className="container py-20">
       <PillarsList
         title="Type of Pillars"
         subtitle="Fostering Impact"

@@ -23,6 +23,20 @@ module.exports = {
         xl: '1280px'
       }
     },
+    green: {
+      DEFAULT: '#009639',
+      50: '#edfff3',
+      100: '#e5f4eb', // override
+      200: '#afffcc',
+      300: '#71ffa7',
+      400: '#2dfb79',
+      500: '#02e557',
+      600: '#00bf44',
+      700: '#009639',
+      800: '#067531',
+      900: '#085f2b',
+      950: '#003615'
+    }
   },
   corePlugins: {
     aspectRatio: false,
@@ -43,12 +57,12 @@ module.exports = {
           },
 
           
-          // '.clip-cut': {
-          //   'clip-path': 'polygon(0 0, 80% 0, 100% 10%, 100% 100%, 0% 100%, 0 0)',
-          // },
           '.clip-cut': {
-            'clip-path': 'polygon(calc(100% - 20px)0,100%  7%, 100% 100%, 0 100%, 0 0)',
+            'clip-path': 'polygon(0 0, 80% 0, 100% 10%, 100% 100%, 0% 100%, 0 0)',
           },
+          // '.clip-cut': {
+          //   'clip-path': 'polygon(calc(100% - 20px)0,100%  7%, 100% 100%, 0 100%, 0 0)',
+          // },
 
 
           '.clip-cut-tri':{
