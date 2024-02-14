@@ -25,7 +25,7 @@ export const PillarsList: React.FC<PillarsList> = ({
         </div>
       </div>
       <div className="py-8">
-        <p className="text-center font-ubuntu text-sm font-light  text-gray-700 md:text-lg">
+        <p className="text-center font-ubuntu  font-light  text-gray-700 md:text-lg">
           {description}
         </p>
       </div>

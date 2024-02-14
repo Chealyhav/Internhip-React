@@ -2,6 +2,7 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +11,23 @@ module.exports = {
   ],
   theme: {
     extend: {},
+
+    
+    
+    keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     fontFamily: {
       'ubuntu': ['Ubuntu', 'sans-serif'],
     },
@@ -60,6 +78,7 @@ module.exports = {
           '.clip-cut': {
             'clip-path': 'polygon(0 0, 80% 0, 100% 10%, 100% 100%, 0% 100%, 0 0)',
           },
+          
           // '.clip-cut': {
           //   'clip-path': 'polygon(calc(100% - 20px)0,100%  7%, 100% 100%, 0 100%, 0 0)',
           // },
@@ -70,6 +89,15 @@ module.exports = {
           },
           '.clip-cut-tri-sm':{
             'clip-path': 'polygon(0 calc(100% - 17px), 100% 1%, 100% 100%)',
+          },
+          '.AccordionContent': {
+            overflow: 'hidden',
+          },
+          '.AccordionContent[data-state="open"]': {
+            animation: 'slideDown 300ms ease-out',
+          },
+          '.AccordionContent[data-state="closed"]': {
+            animation: 'slideUp 300ms ease-out',
           }
         })
       })
