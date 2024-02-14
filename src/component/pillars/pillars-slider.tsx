@@ -11,25 +11,32 @@ import { PillarsCard, PillarsCardProps } from "./pillars-card";
 export const PillarsSlider: React.FC<{ items: PillarsCardProps[] }> = ({
   items,
 }) => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  const [activeDes, setActiveDes] = useState(true);
+  const [activeCard, setActiveCard] = useState<{
+    activeIndex: number | null;
+    activeDes: boolean;
+  }>({ activeIndex: 0, activeDes: true });
 
   const handleSelectCard = (index: number) => {
-    if (activeIndex === index) {
-      setActiveDes(!activeDes);
-    } else {
-      setActiveDes(false);
-      setTimeout(() => {
-        setActiveIndex(index);
-        setActiveDes(true);
-      }, 300);
+    const { activeIndex, activeDes } = activeCard;
+    if (activeIndex === index)
+      setActiveCard((card) => ({ ...card, activeDes: !activeDes }));
+    else {
+      setActiveCard((card) => ({ ...card, activeDes: false }));
+      setTimeout(
+        () =>
+          setActiveCard({
+            activeIndex: index,
+            activeDes: true,
+          }),
+        300,
+      );
     }
   };
   return (
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={20}
+        spaceBetween={24}
         loop={true}
         modules={[Pagination, Autoplay]}
         pagination={{
@@ -58,13 +65,15 @@ export const PillarsSlider: React.FC<{ items: PillarsCardProps[] }> = ({
         {items.map((x, i) => (
           <SwiperSlide
             key={i}
-            className="max-w-[calc(100%-20px)/2] lg:max-w-[calc(100%-20px)/3] xl:max-w-[calc((100%-20px)/4)]"
+            className="mr-6 sm:max-w-[calc((100%-24px)/2)] md:max-w-[calc((100%-24px)/2)] lg:max-w-[calc((100%-48px)/3)]   xl:max-w-[calc((100%-96px)/4)]"
           >
             <div className="mb-20 h-full w-full">
               <div>
                 <PillarsCard
                   {...x}
-                  activeIcon={activeIndex === i && activeDes}
+                  activeIcon={
+                    activeCard.activeIndex === i && activeCard.activeDes
+                  }
                   onSelectCard={() => handleSelectCard(i)}
                 />
               </div>
@@ -72,14 +81,14 @@ export const PillarsSlider: React.FC<{ items: PillarsCardProps[] }> = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      {activeIndex !== null && (
+      {activeCard.activeIndex !== null && (
         <AnimateHeight
-          height={activeDes ? "auto" : 0}
+          height={activeCard.activeDes ? "auto" : 0}
           contentClassName="auto-content"
           duration={300}
         >
           <p className="text-center font-ubuntu font-light md:text-lg">
-            {items[activeIndex].description}
+            {items[activeCard.activeIndex].description}
           </p>
         </AnimateHeight>
       )}

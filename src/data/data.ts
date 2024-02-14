@@ -1,4 +1,23 @@
 
+//partnersData //
+export const partnersData=[{
+  image:"/image/partners-logo1.jpg",
+  title:"Mobile Data Service Provider 2023 by Frost and Sullivan."
+},
+{
+  image:"/image/partners-logo2.jpg",
+  title:"Mobile Data Service Provider 2023 by Frost and Sullivan."
+},
+{
+  image:"/image/partners-logo3.jpg",
+  title:"Mobile Data Service Provider 2023 by Frost and Sullivan."
+},
+{
+  image:"/image/partners-logo1.jpg",
+  title:"Mobile Data Service Provider 2023 by Frost and Sullivan."
+},
+]
+
 
 //Data direction card //
 export const data1=[
