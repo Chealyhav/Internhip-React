@@ -1,3 +1,35 @@
+//Data direction card //
+export const datatest=[
+  {
+  src:"/image/target.png",
+  title:"Our Mission",
+  content:"We connect. We make lives better."
+ },
+ {
+  src:"/image/target.png",
+  title:"Our Mission",
+  content:"We connect. We make lives better. We connect. We make lives better."
+ },
+
+ {
+  src:"/image/target.png",
+  title:"Our Mission",
+  content:"We connect. We make lives better."
+ },
+ {
+  src:"/image/vision.png",
+  title:"Our Vision",
+  content:"To be the #1 and most loved communication tech brand in Cambodia."
+ },
+ {
+  src:"/image/value.png",
+  title:"Our Core Values",
+  content:"We are dive by a commitment to innovation, integrity, and empowerment."
+ },
+ 
+]
+
+
 
 //partnersData //
 export const partnersData=[{
