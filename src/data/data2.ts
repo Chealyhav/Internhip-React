@@ -46,3 +46,43 @@ export const data3 = [
     },
 
 ]
+
+
+export const sampleData = [
+    {
+      src: "/image/Smart.png",
+      tagline: "Smart Value 1",
+      title: "Starter",
+      price: "18.00",
+      plantitle: "CUG Together",
+      planprice: "5.00",
+      duration: "USD/Month",
+
+      label: "Download Speed",
+      icon: "/image/wi-fi.png",
+      desc: "FREE Installation when you subscribe to plan 3 month or more.",
+      bandwidth: "30 MB",
+      items: [
+        {
+          label: "Data",
+          value: "500 MB",
+        },
+        {
+          label: "One-net-calls",
+          value: "1,500 min",
+        },
+        {
+          label: "Off-net-calls",
+          value: "30 min",
+        },
+        {
+          label: "On-net-SMS",
+          value: "30 SMS",
+        },
+       
+      ],
+      href: "/link-1",
+      content: "Contact for more information.",
+      labelbutton: "Call Us",
+    },
+  ];

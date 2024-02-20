@@ -3,6 +3,8 @@ import { BusinessList } from "@/component/business-package/business-list";
 import { Direction } from "@/component/direction/direction";
 import { Follow } from "@/component/follow/follow";
 import { Governance } from "@/component/governance/governance";
+import { InternetPackage } from "@/component/package/internet-package";
+import { PlanPackage } from "@/component/package/plan-package";
 import { PartnersList } from "@/component/partners";
 import { PillarsList } from "@/component/pillars";
 import { ResizableList } from "@/component/resizable/resizable-list";
@@ -15,7 +17,7 @@ import {
   dataSustainability,
   follow,
 } from "@/data/data";
-import { data2, data3 } from "@/data/data2";
+import { data2, data3, sampleData } from "@/data/data2";
 import { data, subscribeddata } from "@/data/mockup-data";
 import React from "react";
 
@@ -72,6 +74,20 @@ export default function Home() {
       <PartnersList
         title="Partners"
         subtitle="Collaborating for Success: Our Trusted Partnerships that Propel Smart Axiata Forward"
+      />
+
+      <PlanPackage
+        items={sampleData}
+        title="Plan Packages"
+        subtitle="SIM Plans & Devices Plans"
+        description="You can provide your employees with postpaid balance, minutes, SMS and data for work, while they can also subscribe to the prepaid plans and services of their choice to enjoy as they wish."
+      />
+
+      <InternetPackage
+        items={sampleData}
+        title="Internet Solution Packages"
+        subtitle="Internet Solution Packages"
+        description="You can provide your employees with postpaid balance, minutes, SMS and data for work, while they can also subscribe to the prepaid plans and services of their choice to enjoy as they wish."
       />
     </div>
   );
